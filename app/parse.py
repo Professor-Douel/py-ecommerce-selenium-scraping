@@ -50,7 +50,7 @@ def get_product_detail(
 
     for link in product_links:
         driver.get(link)
-        wait = WebDriverWait(driver, timeout=0.1)
+        wait = WebDriverWait(driver, timeout=10)
         try:
             print(link)
             product_name = wait.until(
